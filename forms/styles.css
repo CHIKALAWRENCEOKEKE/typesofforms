@@ -1,0 +1,67 @@
+body {
+  background-color: brown;
+  font: 1rem fantasy;
+  color: rgb(221, 183, 15);
+}
+
+form {
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 7px;
+  margin: 5rem auto;
+  background-color: blue;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  display: block;
+  font-weight: normal;
+  background-color: orangered;
+  color: green;
+  font-size: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  margin-bottom: 2em;
+  border: 2px solid yellow;
+  padding: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: aqua;
+  color: rgb(14, 37, 14);
+  border-color: orangered;
+}
+
+button {
+  display: block;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: brown;
+}
+
+.control-inline-element {
+  display: flex;
+}
+
+.control-inline-element input {
+  width: auto;
+}
+
+input {
+  border-radius: 20px;
+}

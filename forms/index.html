@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="/user-data" method="GET">
+      <label for="money">card number</label>
+      <input
+        type="text"
+        name="subscriber"
+        id="money"
+        placeholder="share with us your testimony"
+      />
+
+      <label for="usermessage">your message</label>
+      <textarea
+        name="user-message"
+        id="usermessage"
+        cols="30"
+        rows="1"
+      ></textarea>
+      <label for="useremail">login</label
+      ><input
+        type="email"
+        name="user-email"
+        id="useremail"
+        required
+        placeholder="Donslimlaw11@gmail.com"
+      /><label for="userage">your age</label
+      ><input
+        type="number"
+        step="3"
+        min="20"
+        max="40"
+        required
+        name="user-age"
+        id="userage"
+      />
+      <label for="password">your password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        minlength="8"
+      />
+      <label for="date">yourbirthday</label
+      ><input
+        type="date"
+        name="user birthdate"
+        id="date"
+        max="2000-12-31"
+        required
+        min="1990-12-31"
+      />
+
+      <label for="favourite-color">choose your favourite color</label>
+      <select name="favourite-color" id="favourite-color">
+        <option value="awka">awka</option>
+        <option value="onitsha">onitsha</option>
+        <option value="umunze">umunze</option>
+      </select>
+      <hr />
+      <h1>how should we verify you?</h1>
+
+      <div class="control-inline-element">
+        <input
+          type="radio"
+          name="verify"
+          id="verify-phone-message"
+          value="phone-sms-verification"
+          required
+        />
+        <label for="verify-phone-message">verify via text message (SMS)</label>
+      </div>
+
+      <div class="control-inline-element">
+        <input
+          type="radio"
+          name="verify"
+          id="verify-phonecall"
+          value="phone-call-verification"
+        />
+        <label for="verify-phonecall">verify via phone call</label>
+      </div>
+
+      <div class="control-inline-element">
+        <input
+          type="radio"
+          name="verify"
+          id="verify-email"
+          value="email-verification"
+        />
+        <label for="verify-email">verify via text email</label>
+      </div>
+
+      <div class="control-inline-element">
+        <input type="checkbox" name="verify" id="agree-terms-condition" />
+        <label for="agree-terms-condition"
+          >Accept our terms and conditions</label
+        >
+      </div>
+
+      <div class="control-inline-element">
+        <input type="checkbox" name="contact" id="via-email" value="email" />
+        <label for="via-email">contact me via email</label>
+      </div>
+
+      <div class="control-inline-element">
+        <input type="checkbox" name="contact" id="via-phone" value="phone" />
+        <label for="via-phone">contact me via phone call</label>
+      </div>
+
+      <button>pay</button>
+    </form>
+  </body>
+</html>
